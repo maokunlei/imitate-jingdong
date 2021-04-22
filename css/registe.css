@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'icomoon';
+    src        : url('../fonts/icomoon.eot?tomleg');
+    src        : url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: block;
+}
+
+.w {
+    width : 1200px;
+    margin: 0 auto;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+.header {
+    height       : 82px;
+    padding-top  : 16px;
+    border-bottom: solid 2px #c81623;
+}
+
+.box {
+    height    : 520px;
+    margin-top: 20px;
+    border    : solid 1px #dfdfdf;
+}
+
+.box .hd {
+    height          : 42px;
+    padding         : 0 12px;
+    border-bottom   : solid 1px #dfdfdf;
+    background-color: #ececec;
+    line-height     : 42px;
+    font-size       : 18px;
+}
+
+.box .hd span {
+    float    : right;
+    font-size: 14px;
+}
+
+.box .bd {
+    width : 570px;
+    height: 370px;
+    margin: 56px auto 0px;
+}
+
+.bd ul {
+    width: 800px;
+}
+
+.bd ul li {
+    margin-bottom: 20px;
+    /* height    : 38px;
+    line-height  : 38px; */
+}
+
+.bd ul li label {
+    display   : inline-block;
+    width     : 100px;
+    font-size : 14px;
+    text-align: right;
+}
+
+.bd ul li input[type*="tel"],
+.bd ul li input[type*="pass"],
+.bd ul li input[type*="number"] {
+    width         : 240px;
+    height        : 36px;
+    border        : 1px solid #999;
+    font-size     : 16px;
+    vertical-align: middle;
+}
+
+/* 验证码发送 */
+form ul li:nth-of-type(2) {
+    position: relative;
+}
+
+.msgbtn {
+    height          : 36px;
+    width           : 100px;
+    background-color: #fff;
+    position        : absolute;
+    left            : 240px;
+    border          : 1px solid #999;
+
+}
+
+/* 输入信息提示 */
+.error,
+.error_ico {
+    display       : inline-block;
+    color         : #c81623;
+    font-size     : 12px;
+    vertical-align: middle;
+}
+
+.success_ico {
+    color: #6ad662;
+}
+
+.secure {
+    margin-top: 3px;
+}
+
+.bd i {
+    display       : inline-block;
+    font          : 20px 'icomoon';
+    vertical-align: middle;
+    margin        : 0 3px;
+}
+
+/* 安全等级验证 */
+.bd .self {
+    margin-left: 135px;
+    color      : #bebebe
+}
+
+.red,
+.orange,
+.green {
+    display: inline-block;
+
+    width         : 34px;
+    height        : 8px;
+    margin-right  : 1px;
+    vertical-align: middle;
+    border-radius : 3px;
+}
+
+.red {
+    background-color: #de1111;
+}
+
+.orange {
+    visibility      : hidden;
+    background-color: #f79100;
+}
+
+.green {
+    visibility      : hidden;
+    background-color: #6ad662;
+}
+
+.agrmt {
+    margin-left: 90px;
+}
+
+.agrmt input {
+    display       : inline-block;
+    height        : 16px;
+    width         : 16px;
+    margin-right  : 10px;
+    color         : deepskyblue;
+    vertical-align: bottom;
+}
+
+.agrmt a {
+    color: deepskyblue;
+}
+
+.footer .mod_copyright {
+    height     : 119px;
+    padding-top: 20px;
+    text-align : center;
+}
+
+.footer .mod_copyright p a {
+    font: 12px 'songti';
+}
+
+.footer .mod_copyright p span {
+    padding: 0 10px;
+}
+
+.footer .mod_copyright .address {
+    margin-top : 13px;
+    font-size  : 12px;
+    line-height: 20px;
+}
+
+input[type*="sub"] {
+    display         : block;
+    width           : 200px;
+    height          : 35px;
+    margin-top      : 40px;
+    margin-left     : 130px;
+    background-color: #de1111;
+    color           : #fff;
+    text-align      : center;
+    line-height     : 35px;
+    cursor          : pointer;
+}

@@ -1,0 +1,132 @@
+.list_logo {
+    position:absolute;
+    top:41px;
+    left:185px;
+    border-left:2px solid #c81623;
+    padding:2px 14px;
+}
+.list_logo ul li h2 a {
+    display: block;
+    width: 84px;
+    height: 32px;
+}
+.sk_hd,
+.sk_bd {
+    float:left;
+    height: 45px;
+}
+.sk_hd ul li {
+    float: left;
+    height: 100%;
+    margin:0 28px;
+}
+.sk_hd ul li a {
+    display: block;
+    font-size:16px;
+    font-weight:700;
+    line-height: 45px;
+    color:#000;
+}
+.sk_bd ul li {
+    float: left;
+    height: 100%;
+    margin:0 23px;
+}
+.sk_bd ul li a {
+    display: block;
+    font-size:14px;
+    line-height: 45px;
+}
+.sk_bd ul li:last-child a::after {
+    content:'\e91e';
+    font-family: 'icomoon';
+}
+.sk_container_hd {
+    width: 1200px;
+    height: 120px;
+}
+.sk_container_hd img {
+    height: 100%;
+    width: 100%;
+}
+.sk_container_bd {
+    margin-top:26px;
+    width: 1200px;
+    overflow: hidden;
+}
+.sk_container_bd ul {
+    width: 1250px;
+}
+.sk_container_bd ul li{
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 460px;
+    border:solid 1px transparent;
+    margin:0 12px 5px 0;
+}
+.sk_container_bd ul li:hover{
+    border:solid 1px #c81623;
+}
+.sk_container_bd ul li:hover a{
+    color:#666;
+}
+.sk_container_bd ul li .sk_pic {
+    width: 144px;
+    height: 251px;
+    margin:22px auto 26px;
+}
+.sk_pic img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.sk_container_bd ul li .sk_txt {
+    width: 290px;
+    padding:0 12px;
+    font-size:14px;
+}
+.sk_container_bd ul li .sk_txt .price {
+    height: 42px;
+    line-height: 42px;
+    vertical-align: bottom;
+}
+
+.sk_container_bd ul li .sk_txt .price span {
+    font-size:22px;
+    font-weight: 900;
+}
+.sk_container_bd ul li .sk_txt .price i {
+    color:#666;
+    text-decoration:line-through;
+}
+
+.sk_txt .jindu {
+    display:inline-block;
+    width: 132px;
+    height: 14px;
+    margin-top:-2px;
+    border:1px solid #c81623;
+    background-color: #c81623;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+.sk_txt .jindu .jindu_end {
+    float: right;
+    width: 13%;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 0 6px 6px 0;
+}
+.sk_footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: #c81623;
+    font-size:20px;
+    color:#fff;
+    text-align: center;
+    line-height: 50px;
+}

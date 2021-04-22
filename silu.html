@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            /*IE6\7专有*/
+            *zoom: 1;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        h1 {
+            height: 100px;
+            background-color: #f6f6f6;
+            text-align: center;
+            line-height: 100px;
+            font-weight: 400;
+        }
+
+        .box {
+            width: 1200px;
+            margin: auto;
+            background-color: #f6f6f6;
+        }
+
+        .box div {
+            float: left;
+            height: 300px;
+            margin: 0 40px 20px 20px;
+            background-color: #fff;
+        }
+
+        .box .last {
+            margin-right: 0;
+        }
+
+        .txt {
+            float: left;
+            width: 350px;
+            margin: 0 10px 20px 10px;
+            padding: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>思 路</h1>
+    <div class="box clearfix">
+        <div> <img src="../学成在线/图片/CSS书写顺序.png" alt="书写顺序" width="600px"> </div>
+        <div class="last"> <img src="../学成在线/图片/页面布局整体思路.png" alt="整体思路" width="500px"></div>
+        <div><img src="preparation/命名.png" alt="命名约定" height="300px"></div>
+        <div>
+            <img src="preparation/header制作.png" alt="header命名" height="300px">
+        </div>
+        <div>
+            <img src="preparation/logo优化.png" alt="header命名" width="600px">
+        </div>
+    </div>
+    <div class="box clearfix">
+        <p class="txt">将量出来的版心定义成一个公共类</p>
+        <p class="txt">
+            实际开发中，导航栏不会直接用链接a而是用li包含链接（li+a）的做法：
+        <ul class="txt">
+            <li>语义更清晰，列表型内容更有条理</li>
+            <li>若直接用a，搜索引擎辨别为堆砌关键字嫌疑，有降权的风险从而影响网站排名</li>
+            <li>若a是图片等形式，将a转换为块元素是比较安全的做法</li>
+        </ul>
+        </p>
+        <p class="txt">“一浮全浮”子元素有一个浮动其他子元素都加浮动</p>
+        <p class="txt">行内块元素之间有一个默认边距，可以让两元素设为浮动，浮动元素间没有间距。</p>
+    </div>
+    <div class="box claerfix">
+        <p>写主页特有样式 index.css内名称：main包含focus newflash</p>
+        <p>焦点图不能直接放在盒子里，要放在focus->ul li内 要加上左右按钮和下面的原点</p>
+        <p>newflash内包含三块：news lifeservice bargin</p>
+        <p>news内包含头部news-hd和身体news-bd 注意做一个超出省略号</p>
+        <p>main写完第二块推荐模块racom包含两块recom_hd recom_bd</p>
+        <p>后台上传图片可能有大有小，因此应强制设置图片大小</p>
+
+        <p>用一个大楼层区包含floor 家电楼层类名w jiadian 内部分两块box_hd box_bd</p>
+        <p>为了做出tab效果tab_list决定哪个tab_content显示，因此box_hd里右侧盒子起名叫tab_list，box_bd内的盒子叫tab_content</p>
+        <p>tab_content内放tab_list内各个标签对应的内容如第一个起名tab_list_item</p>
+    </div>
+</body>
+
+</html>
