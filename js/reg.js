@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var ragtel = /^1[345789]\d{9}$/;
     var ragmsg = /^\d{6}$/;
-    var ragpsw = /^(\w|-){6,16}$/;
+    // var ragpsw = /^(\w|-){6,16}$/;
     var ragpsw = /^[^\s]{6,16}$/;
 
     var telFlag = false
